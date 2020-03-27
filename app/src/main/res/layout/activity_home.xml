@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
+    <!-- Home text-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,17 +14,375 @@
         android:textSize="20dp"
         android:textStyle="bold" />
 
+    <!-- Line below Home text -->
     <View
+        android:id="@+id/line_below_home"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_margin="5dp"
         android:background="@android:color/darker_gray" />
 
+    <ScrollView
+        android:id="@+id/post_box"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- First post -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <!-- profile pic -->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/profile_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:src="@drawable/profile"
+                        android:foregroundGravity="center"/>
+                </RelativeLayout>
+
+                <!-- profile name -->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/profile_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:textStyle="bold"
+                            android:text="Omesh Kumar"/>
+
+                        <TextView
+                            android:id="@+id/post_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="True love is  a good thing"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="5dp"
+                            android:background="@android:color/darker_gray" />
+
+                        <ImageView
+                            android:id="@+id/post_pic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/profile"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="5dp"
+                            android:background="@android:color/darker_gray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/home"
+                                    style="@style/CategoryStyle1"
+                                    android:layout_marginRight="40dp"
+                                    android:src="@drawable/like" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/search"
+                                    style="@style/CategoryStyle1"
+                                    android:layout_toRightOf="@id/home"
+                                    android:src="@drawable/comment" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/notification"
+                                    style="@style/CategoryStyle1"
+                                    android:layout_toRightOf="@id/search"
+                                    android:src="@drawable/share" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- Line after first post-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_margin="5dp"
+                android:background="@android:color/darker_gray" />
+
+            <!-- 2. Second post -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <!-- profile pic-->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/profile_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:src="@drawable/profile"
+                        android:foregroundGravity="center"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/profile_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:textStyle="bold"
+                            android:text="Omesh Kumar"/>
+
+                        <TextView
+                            android:id="@+id/post_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="True love is  a good thing"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="5dp"
+                            android:background="@android:color/darker_gray" />
+
+                        <ImageView
+                            android:id="@+id/post_pic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/profile"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="5dp"
+                            android:background="@android:color/darker_gray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/home"
+                                    style="@style/CategoryStyle1"
+                                    android:layout_marginRight="40dp"
+                                    android:src="@drawable/like" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/search"
+                                    style="@style/CategoryStyle1"
+                                    android:layout_toRightOf="@id/home"
+                                    android:src="@drawable/comment" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/notification"
+                                    style="@style/CategoryStyle1"
+                                    android:layout_toRightOf="@id/search"
+                                    android:src="@drawable/share" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- Line after second post-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_margin="5dp"
+                android:background="@android:color/darker_gray" />
+
+            <!-- 3. Third post -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <!-- profile pic-->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/profile_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:src="@drawable/profile"
+                        android:foregroundGravity="center"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/profile_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:textStyle="bold"
+                            android:text="Omesh Kumar"/>
+
+                        <TextView
+                            android:id="@+id/post_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="True love is  a good thing"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="5dp"
+                            android:background="@android:color/darker_gray" />
+
+                        <ImageView
+                            android:id="@+id/post_pic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/profile"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="5dp"
+                            android:background="@android:color/darker_gray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/home"
+                                    style="@style/CategoryStyle1"
+                                    android:layout_marginRight="40dp"
+                                    android:src="@drawable/like" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/search"
+                                    style="@style/CategoryStyle1"
+                                    android:layout_toRightOf="@id/home"
+                                    android:src="@drawable/comment" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/notification"
+                                    style="@style/CategoryStyle1"
+                                    android:layout_toRightOf="@id/search"
+                                    android:src="@drawable/share" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- Line after Third post-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_margin="5dp"
+                android:background="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Below home, search, notification icon-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="16dp">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <RelativeLayout
             android:layout_width="0dp"
@@ -33,12 +391,10 @@
 
             <ImageView
                 android:id="@+id/home"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_alignParentBottom="true"
-                android:layout_margin="20dp"
+                style="@style/CategoryStyle"
                 android:layout_marginRight="40dp"
                 android:src="@drawable/home" />
+
         </RelativeLayout>
 
         <RelativeLayout
@@ -48,11 +404,7 @@
 
             <ImageView
                 android:id="@+id/search"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_alignParentBottom="true"
-                android:layout_margin="20dp"
-                android:layout_toRightOf="@id/home"
+                style="@style/CategoryStyle"
                 android:src="@drawable/search" />
         </RelativeLayout>
 
@@ -63,12 +415,10 @@
 
             <ImageView
                 android:id="@+id/notification"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_alignParentBottom="true"
-                android:layout_margin="20dp"
-                android:layout_toRightOf="@id/search"
+                style="@style/CategoryStyle"
                 android:src="@drawable/notification" />
         </RelativeLayout>
+
     </LinearLayout>
+
 </LinearLayout>

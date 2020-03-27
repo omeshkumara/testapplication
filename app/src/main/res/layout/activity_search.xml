@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:padding="5dp"
             android:text="Nearby Trend"
             android:textSize="15sp"
             android:textStyle="bold" />
@@ -28,7 +28,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:padding="5dp"
             android:text="World Trend"
             android:textSize="15sp"
             android:textStyle="bold" />
@@ -52,10 +52,8 @@
 
             <ImageView
                 android:id="@+id/home"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                style="@style/CategoryStyle"
                 android:layout_alignParentBottom="true"
-                android:layout_margin="20dp"
                 android:layout_marginRight="40dp"
                 android:src="@drawable/home" />
         </RelativeLayout>
@@ -67,10 +65,8 @@
 
             <ImageView
                 android:id="@+id/search"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                style="@style/CategoryStyle"
                 android:layout_alignParentBottom="true"
-                android:layout_margin="20dp"
                 android:layout_toRightOf="@id/home"
                 android:src="@drawable/search" />
         </RelativeLayout>
@@ -82,10 +78,8 @@
 
             <ImageView
                 android:id="@+id/notification"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                style="@style/CategoryStyle"
                 android:layout_alignParentBottom="true"
-                android:layout_margin="20dp"
                 android:layout_toRightOf="@id/search"
                 android:src="@drawable/notification" />
         </RelativeLayout>
