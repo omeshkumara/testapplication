@@ -38,20 +38,20 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
 
                 <!-- profile pic -->
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1">
+
                     <ImageView
                         android:id="@+id/profile_pic"
                         android:layout_width="wrap_content"
                         android:layout_height="50dp"
-                        android:src="@drawable/profile"
-                        android:foregroundGravity="center"/>
+                        android:foregroundGravity="center"
+                        android:src="@drawable/profile" />
                 </RelativeLayout>
 
                 <!-- profile name -->
@@ -59,23 +59,25 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="7">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:id="@+id/profile_name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
-                            android:textStyle="bold"
-                            android:text="Omesh Kumar"/>
+                            android:text="Omesh Kumar"
+                            android:textStyle="bold" />
 
-                        <TextView
+                        <EditText
                             android:id="@+id/post_content"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="True love is  a good thing"/>
+                            android:hint="True love is  a good thing" />
 
                         <View
                             android:layout_width="match_parent"
@@ -87,7 +89,7 @@
                             android:id="@+id/post_pic"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/profile"/>
+                            android:src="@drawable/profile" />
 
                         <View
                             android:layout_width="match_parent"
@@ -99,6 +101,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <RelativeLayout
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -152,43 +155,45 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
 
                 <!-- profile pic-->
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1">
+
                     <ImageView
                         android:id="@+id/profile_pic"
                         android:layout_width="wrap_content"
                         android:layout_height="50dp"
-                        android:src="@drawable/profile"
-                        android:foregroundGravity="center"/>
+                        android:foregroundGravity="center"
+                        android:src="@drawable/profile" />
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="7">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:id="@+id/profile_name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
-                            android:textStyle="bold"
-                            android:text="Omesh Kumar"/>
+                            android:text="Omesh Kumar"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/post_content"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="True love is  a good thing"/>
+                            android:text="True love is  a good thing" />
 
                         <View
                             android:layout_width="match_parent"
@@ -200,7 +205,7 @@
                             android:id="@+id/post_pic"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/profile"/>
+                            android:src="@drawable/profile" />
 
                         <View
                             android:layout_width="match_parent"
@@ -212,6 +217,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <RelativeLayout
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -265,43 +271,45 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
 
                 <!-- profile pic-->
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1">
+
                     <ImageView
                         android:id="@+id/profile_pic"
                         android:layout_width="wrap_content"
                         android:layout_height="50dp"
-                        android:src="@drawable/profile"
-                        android:foregroundGravity="center"/>
+                        android:foregroundGravity="center"
+                        android:src="@drawable/profile" />
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="7">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:id="@+id/profile_name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
-                            android:textStyle="bold"
-                            android:text="Omesh Kumar"/>
+                            android:text="Omesh Kumar"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/post_content"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="True love is  a good thing"/>
+                            android:text="True love is  a good thing" />
 
                         <View
                             android:layout_width="match_parent"
@@ -313,7 +321,7 @@
                             android:id="@+id/post_pic"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/profile"/>
+                            android:src="@drawable/profile" />
 
                         <View
                             android:layout_width="match_parent"
@@ -325,6 +333,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <RelativeLayout
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
@@ -406,8 +415,8 @@
 
             <ImageView
                 android:id="@+id/search"
-                android:onClick="search"
                 style="@style/CategoryStyle"
+                android:onClick="search"
                 android:src="@drawable/search" />
         </RelativeLayout>
 
@@ -418,11 +427,23 @@
 
             <ImageView
                 android:id="@+id/notification"
-                android:onClick="notification"
                 style="@style/CategoryStyle"
+                android:onClick="notification"
                 android:src="@drawable/notification" />
         </RelativeLayout>
 
     </LinearLayout>
+    <!-- send button -->
+    <ImageButton
+        android:id="@+id/send_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/common_google_signin_btn_icon_dark"/>
+    <!-- log out button -->
+    <Button
+        android:id="@+id/log_out_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="log out"/>
 
 </LinearLayout>
