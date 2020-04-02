@@ -15,34 +15,14 @@ public class Notification extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification);
 
-        ImageView home= findViewById(R.id.home);
+    }
+    public void home(View view) {
+        Intent homeIntent = new Intent(Notification.this, Home.class);
+        startActivity(homeIntent);
+    }
 
-        home.setOnClickListener(new View.OnClickListener(){
-
-            public void onClick(View view){
-                Intent homeIntent= new Intent(Notification.this, Home.class);
-                startActivity(homeIntent);
-            }
-        });
-
-        ImageView search= findViewById(R.id.search);
-
-        search.setOnClickListener(new View.OnClickListener(){
-
-            public void onClick(View view){
-                Intent searchIntent= new Intent(Notification.this, Search.class);
-                startActivity(searchIntent);
-            }
-        });
-
-        ImageView notification= findViewById(R.id.notification);
-
-        notification.setOnClickListener(new View.OnClickListener(){
-
-            public void onClick(View view){
-                Intent notificationIntent= new Intent(Notification.this, Notification.class);
-                startActivity(notificationIntent);
-            }
-        });
+    public void search(View view) {
+        Intent searchIntent = new Intent(Notification.this, Search.class);
+        startActivity(searchIntent);
     }
 }

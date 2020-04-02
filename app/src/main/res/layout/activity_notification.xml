@@ -33,6 +33,7 @@
 
             <ImageView
                 android:id="@+id/home"
+                android:onClick="home"
                 style="@style/CategoryStyle"
                 android:layout_alignParentBottom="true"
                 android:layout_marginRight="40dp"
@@ -47,6 +48,7 @@
             <ImageView
                 android:id="@+id/search"
                 style="@style/CategoryStyle"
+                android:onClick="search"
                 android:layout_alignParentBottom="true"
                 android:layout_toRightOf="@id/home"
                 android:src="@drawable/search" />

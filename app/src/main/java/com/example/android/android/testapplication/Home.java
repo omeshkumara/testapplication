@@ -15,25 +15,15 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        ImageView search= findViewById(R.id.search);
+    }
 
-        search.setOnClickListener(new View.OnClickListener(){
+    public void search(View view) {
+        Intent searchIntent = new Intent(Home.this, Search.class);
+        startActivity(searchIntent);
+    }
 
-            public void onClick(View view){
-                Intent searchIntent= new Intent(Home.this, Search.class);
-                startActivity(searchIntent);
-            }
-        });
-
-        ImageView notification= findViewById(R.id.notification);
-
-        notification.setOnClickListener(new View.OnClickListener(){
-
-            public void onClick(View view){
-                Intent notificationIntent= new Intent(Home.this, Notification.class);
-                startActivity(notificationIntent);
-            }
-        });
-
+    public void notification(View view) {
+        Intent notificationIntent = new Intent(Home.this, Notification.class);
+        startActivity(notificationIntent);
     }
 }

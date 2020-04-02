@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <!-- Home text-->
     <TextView
         android:layout_width="match_parent"
@@ -330,7 +331,7 @@
                                 android:layout_weight="1">
 
                                 <ImageView
-                                    android:id="@+id/home"
+                                    android:id="@+id/like"
                                     style="@style/CategoryStyle1"
                                     android:layout_marginRight="40dp"
                                     android:src="@drawable/like" />
@@ -342,7 +343,7 @@
                                 android:layout_weight="1">
 
                                 <ImageView
-                                    android:id="@+id/search"
+                                    android:id="@+id/comment"
                                     style="@style/CategoryStyle1"
                                     android:layout_toRightOf="@id/home"
                                     android:src="@drawable/comment" />
@@ -354,7 +355,7 @@
                                 android:layout_weight="1">
 
                                 <ImageView
-                                    android:id="@+id/notification"
+                                    android:id="@+id/share"
                                     style="@style/CategoryStyle1"
                                     android:layout_toRightOf="@id/search"
                                     android:src="@drawable/share" />
@@ -405,6 +406,7 @@
 
             <ImageView
                 android:id="@+id/search"
+                android:onClick="search"
                 style="@style/CategoryStyle"
                 android:src="@drawable/search" />
         </RelativeLayout>
@@ -416,6 +418,7 @@
 
             <ImageView
                 android:id="@+id/notification"
+                android:onClick="notification"
                 style="@style/CategoryStyle"
                 android:src="@drawable/notification" />
         </RelativeLayout>

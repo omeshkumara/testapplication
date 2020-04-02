@@ -466,6 +466,7 @@
 
             <ImageView
                 android:id="@+id/home"
+                android:onClick="home"
                 style="@style/CategoryStyle"
                 android:layout_marginRight="40dp"
                 android:src="@drawable/home" />
@@ -490,6 +491,7 @@
 
             <ImageView
                 android:id="@+id/notification"
+                android:onClick="notification"
                 style="@style/CategoryStyle"
                 android:src="@drawable/notification" />
         </RelativeLayout>

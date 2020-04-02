@@ -14,34 +14,15 @@ public class Search extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
-        ImageView home= findViewById(R.id.home);
+    }
 
-        home.setOnClickListener(new View.OnClickListener(){
+    public void home(View view) {
+        Intent homeIntent = new Intent(Search.this, Home.class);
+        startActivity(homeIntent);
+    }
 
-            public void onClick(View view){
-                Intent homeIntent= new Intent(Search.this, Home.class);
-                startActivity(homeIntent);
-            }
-        });
-
-        ImageView search= findViewById(R.id.search);
-
-        search.setOnClickListener(new View.OnClickListener(){
-
-            public void onClick(View view){
-                Intent searchIntent= new Intent(Search.this, Search.class);
-                startActivity(searchIntent);
-            }
-        });
-
-        ImageView notification= findViewById(R.id.notification);
-
-        notification.setOnClickListener(new View.OnClickListener(){
-
-            public void onClick(View view){
-                Intent notificationIntent= new Intent(Search.this, Notification.class);
-                startActivity(notificationIntent);
-            }
-        });
+    public void notification(View view) {
+        Intent notificationIntent = new Intent(Search.this, Notification.class);
+        startActivity(notificationIntent);
     }
 }
